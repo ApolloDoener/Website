@@ -1,0 +1,74 @@
+nav {
+    background-color: #999;
+    padding: 1% 10%;
+}
+
+nav .navbar-toggle {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 9px 10px;
+    float: right;
+}
+
+nav .navbar-toggle:hover {
+    background-color: #ddd;
+}
+
+nav .navbar-toggle .icon-bar {
+    background-color: #888;
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+
+nav .navbar-toggle .icon-bar+.icon-bar {
+    margin-top: 4px;
+}
+
+nav .navbar-brand {
+    float: left;
+    font-size: 165%;
+}
+
+nav .collapsed li {
+    list-style-type: none;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav #left {
+    width: 50%;
+}
+
+nav #right {
+    width: 50%;
+}
+
+nav #left li {
+    float: left;
+}
+
+nav #right li {
+    float: right;
+}
+
+nav a {
+    padding: 15px
+}
+
+@media (min-width: 768px) {
+    nav .navbar-toggle {
+        float: left;
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    nav .collapsed {
+        display:none
+    }
+}

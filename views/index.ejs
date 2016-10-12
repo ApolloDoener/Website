@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Website"/>
+        <meta name="author" content="Raffael"/>
+
+        <title>ApolloDoener Home</title>
+
+
+        <!-- PURE.CSS -->
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+        <link rel="stylesheet" href="/stylesheets/grid.css">
+        <link rel="stylesheet" href="/stylesheets/font/css/font-awesome.min.css">
+
+        <!-- BOOTSTRAP NAVBAR-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- CSS -->
+        <link rel='stylesheet' href='/stylesheets/index.css' />
+        <link rel="stylesheet" href="/stylesheets/nav.css">
+        <link rel="stylesheet" href="/stylesheets/footer.css">
+
+        <!-- JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script src="/javascripts/nav.js"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>    </head>
+    <body>
+        <%- include("partials/nav.ejs") %>
+        <div id="main"></div>
+
+        <div class="pure-g text-box content" id="text-box-1">
+            <div class="pure-u-35-100"></div>
+            <div class="pure-u-30-100">
+                <div class="pure-g">
+                    <div class="pure-u-1-2"><p>Melde dich jetzt an!</p></div>
+                    <div class="pure-u-1-2"><a class="button" href="/login">Login</a></div>
+                </div>
+            </div>
+            <div class="pure-u-35-100"></div>
+        </div>
+
+        <%- include("partials/footer.ejs") %>
+    </body>
+</html>

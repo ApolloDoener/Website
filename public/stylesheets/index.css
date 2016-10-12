@@ -1,0 +1,61 @@
+body {
+    font: 14px sans-serif;
+    text-space: 0.01em;
+}
+
+.text-box {
+    background-color: white;
+    padding: 5% 0;
+}
+
+.content p, a {
+    font-size: 1.125em;
+}
+
+
+.button {
+    color: #373737;
+    opacity: 10;
+    padding: 4% 7%;
+    border: 1px solid #008ed4;
+    border-radius: 12px;
+}
+
+#text-box-1 p {
+    padding: 4% 0;
+    font-weight: bold;
+}
+
+#text-box-1 .button {
+    color: #fff;
+    float: right;
+    background-color: #008ed4;
+    font-weight: bold;
+    transition: 0.5s;
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+#text-box-1 .button:hover {
+    background-color: #0075af;
+    text-decoration: none;
+    transition: 0.5s;
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+#main {
+    background-size: cover;
+    background: url("../images/mainImage.png") no-repeat fixed left top;
+    height: 100%;
+    width: 100%;
+    padding: 25% 0;
+}
+
+#text-box-1 {
+    -webkit-box-shadow: 0 -7px 15px -3px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 -7px 15px -3px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 -7px 15px -3px rgba(0, 0, 0, 0.8);
+}
