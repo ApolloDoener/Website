@@ -1,6 +1,9 @@
 $(document).ready(function () {
     var window = $(document);
-    var nav = $("nav");
+    var nav = $("nav .navbar");
+
+    var button = $("nav .navbar-toggle");
+    var navbar = $("nav .collapsed");
 
     window.on("scroll", function () {
         var top = window.scrollTop();
@@ -10,6 +13,16 @@ $(document).ready(function () {
         } else {
             nav.removeClass("affix-top");
             nav.addClass("affix");
+        }
+    });
+
+    button.click(function () {
+        if(navbar.hasClass("collapsed")) {
+            navbar.removeClass("collapsed");
+            navbar.addClass("collapse");
+        } else {
+            navbar.removeClass("collapse");
+            navbar.addClass("collapsed");
         }
     });
 });

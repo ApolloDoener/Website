@@ -1,6 +1,42 @@
+body {
+    margin: 1.7% 0 0;
+}
+
 nav {
-    background-color: #999;
+    height: auto;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav .navbar {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+    border-width: 0 0 1px;
+}
+
+nav .affix-top {
+    padding: 1.7% 10%;
+
+    transition: 0.4s;
+    -o-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -webkit-transition: 0.4s;
+}
+
+nav .affix {
     padding: 1% 10%;
+
+    transition: 0.4s;
+    -o-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -webkit-transition: 0.4s;
+}
+
+nav .navbar-head {
+    width: auto;
+    height: auto;
 }
 
 nav .navbar-toggle {
@@ -8,6 +44,7 @@ nav .navbar-toggle {
     border-radius: 4px;
     padding: 9px 10px;
     float: right;
+    line-height: 20px;
 }
 
 nav .navbar-toggle:hover {
@@ -27,8 +64,15 @@ nav .navbar-toggle .icon-bar+.icon-bar {
 }
 
 nav .navbar-brand {
-    float: left;
     font-size: 165%;
+    font-weight: bolder;
+    padding-right: 30px !important;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 20px;
+}
+
+nav .collapsed {
 }
 
 nav .collapsed li {
@@ -36,39 +80,96 @@ nav .collapsed li {
 }
 
 nav ul {
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
-nav #left {
-    width: 50%;
+nav #items {
+    overflow: hidden;
 }
 
-nav #right {
-    width: 50%;
-}
-
-nav #left li {
+nav .li-left {
     float: left;
 }
 
-nav #right li {
+nav .li-right {
     float: right;
 }
 
 nav a {
-    padding: 15px
+    color: #777;
+    padding: 12px;
+    font-size: 125%;
+    text-decoration: none;
+
+    transition: 0.4s;
+    -o-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -webkit-transition: 0.4s;
 }
 
-@media (min-width: 768px) {
+nav a:hover {
+    color: #202020;
+
+    transition: 0.4s;
+    -o-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -webkit-transition: 0.4s;
+}
+
+@media screen and (min-width: 768px) {
     nav .navbar-toggle {
-        float: left;
+        float: right;
         display: none;
     }
-}
 
-@media (max-width: 768px) {
-    nav .collapsed {
-        display:none
+    nav .navbar-head {
+        float: left;
     }
 }
+
+@media screen and (max-width: 768px) {
+
+
+    nav .affix-top {
+        padding: 2.3% 10%;
+
+        transition: 0.4s;
+        -o-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -webkit-transition: 0.4s;
+    }
+
+    nav .navbar-toggle {
+        float: right;
+        display: block;
+    }
+
+    nav .navbar-brand {
+        line-height: 30px;
+    }
+
+    nav .collapsed {
+        display: none;
+
+        position: relative;
+        height: 0;
+        overflow: hidden;
+
+        transition-duration: .35s;
+        transition-property: height, visibility;
+    }
+
+    nav .collapse {
+        position: relative;
+    }
+
+    nav .collapse ul {
+        padding-top: 2%;
+    }
+
+    nav .collapse li {
+        width: 100%;
+    }
+}
+
