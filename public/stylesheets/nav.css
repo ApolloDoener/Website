@@ -11,7 +11,7 @@ nav {
 }
 
 nav .navbar {
-    background-color: #f8f8f8;
+    background-color: #fff;
     border-color: #e7e7e7;
     border-width: 0 0 1px;
 }
@@ -110,6 +110,7 @@ nav a {
 
 nav a:hover {
     color: #202020;
+    text-decoration: none;
 
     transition: 0.4s;
     -o-transition: 0.4s;
