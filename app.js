@@ -29,6 +29,10 @@ app.get("/imprint", function (req, res) {
   res.render("imprint.ejs");
 });
 
+app.get("/privacy", function (req, res) {
+  res.render("privacy.ejs")
+});
+
 app.listen(port, function () {
   console.log("Started on port " + port + "!");
 });
