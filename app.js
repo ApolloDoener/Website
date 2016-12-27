@@ -1,28 +1,52 @@
 const port = 3000;
 
-var express = require('express');
-var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
+var express = require("express");
+var expressSession = require("express-session");
+var path = require("path");
+var favicon = require("serve-favicon");
+var logger = require("morgan");
+var cookieParser = require("cookie-parser");
+var bodyParser = require("body-parser");
 
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
+app.set("views", path.join(__dirname, "views"));
+app.engine("html", require("ejs").renderFile);
+app.set('trust proxy', 1);
 
 // uncomment after placing your favicon in /public
-//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
-app.use(logger('dev'));
+app.use(favicon(__dirname + "/public/images/favicon.png"));
+app.use(logger("dev"));
+app.use(expressSession({ secret: 'secret', resave: false, saveUninitialized: true, cookie: { secure: true }}));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, "public")));
+
+var session;
 
 app.get("/", function (req, res) {
   res.render("index.ejs");
+});
+
+app.get("/login", function (req, res) {
+    session = req.session;
+
+    res.render("login.ejs");
+});
+
+app.get("/signin", function (req, res) {
+    if(!req.body.email) {
+        res.redirect("/login");
+    }
+    session.email = req.body.email;
+    res.end("done");
+});
+
+
+app.get("/signedin", function (req, res) {
+    res.render("signedin.ejs");
 });
 
 app.get("/imprint", function (req, res) {
@@ -33,6 +57,15 @@ app.get("/privacy", function (req, res) {
   res.render("privacy.ejs")
 });
 
+app.get('/logout',function(req,res) {
+    req.session.destroy(function (err) {
+        if (err) {
+            console.log(err);
+        } else {
+            res.redirect('/');
+        }
+    });
+});
 app.listen(port, function () {
   console.log("Started on port " + port + "!");
 });

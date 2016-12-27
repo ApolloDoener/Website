@@ -8,35 +8,23 @@
 
         <title>ApolloDoener Home</title>
 
-        <!-- PURE.CSS -->
-        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-        <link rel="stylesheet" href="/stylesheets/grid.css">
-        <link rel="stylesheet" href="/stylesheets/font/css/font-awesome.min.css">
-
-        <!-- CSS -->
+        <!-- INCLUDES -->
+        <%- include("partials/includes.ejs") %>
         <link rel='stylesheet' href='/stylesheets/index.css' />
-        <link rel="stylesheet" href="/stylesheets/nav.css">
-        <link rel="stylesheet" href="/stylesheets/footer.css">
-
-        <!-- JavaScript -->
-        <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-        <script src="/javascripts/nav.js"></script>
-
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>    </head>
     <body>
         <%- include("partials/nav.ejs") %>
-        <div id="main"><br></div>
+    <header id="image-header">
+        <h2>ApolloDoener</h2>
+        <h4>Software mit Döner</h4>
+    </header>
 
-        <div class="pure-g text-box content" id="text-box-1">
-            <div class="pure-u-35-100"></div>
-            <div class="pure-u-30-100">
-                <div class="pure-g">
-                    <div class="pure-u-1-2"><p>Melde dich jetzt an!</p></div>
-                    <div class="pure-u-1-2"><a class="button" href="/login">Login</a></div>
-                </div>
-            </div>
-            <div class="pure-u-35-100"></div>
-        </div>
+    <div id="contact">
+        <p>Kontaktiere uns!</p>
+        <a id="mail" href="mailto:kontakt@apollodoener.de"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+        <a id="github" href="https://github.com/Tigifan"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+        <a id="twitter" href="https://twitter.com/Tigifohn"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+        <a id="youtube" href="https://www.youtube.com/channel/UCf0rC4YUbCITZGFX6zeiJNw"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a>
+    </div>
 
         <%- include("partials/footer.ejs") %>
     </body>
