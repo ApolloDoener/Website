@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const port = 3000;
 
 var express = require("express");
@@ -7,6 +8,7 @@ var favicon = require("serve-favicon");
 var logger = require("morgan");
 var cookieParser = require("cookie-parser");
 var bodyParser = require("body-parser");
+var gallery = require("./gallery.js");
 
 var app = express();
 
@@ -15,7 +17,6 @@ app.set("views", path.join(__dirname, "views"));
 app.engine("html", require("ejs").renderFile);
 app.set('trust proxy', 1);
 
-// uncomment after placing your favicon in /public
 app.use(favicon(__dirname + "/public/images/favicon.png"));
 app.use(logger("dev"));
 app.use(expressSession({ secret: 'secret', resave: false, saveUninitialized: true, cookie: { secure: true }}));
@@ -30,6 +31,25 @@ app.get("/", function (req, res) {
   res.render("index.ejs");
 });
 
+app.get("/gallery", function (req, res) {
+    console.log(gallery.listFiles(__dirname + "/public/gallery/"));
+    //res.end(gallery.listFiles("/public/gallery"));
+    res.render("gallery.ejs", {
+        files: gallery.listFiles(__dirname + "/public/gallery/"),
+        test: "doener"
+    });
+});
+
+// IMPRINT & PRIVACY
+app.get("/imprint", function (req, res) {
+  res.render("imprint.ejs");
+});
+
+app.get("/privacy", function (req, res) {
+  res.render("privacy.ejs")
+});
+
+// SESSIONS
 app.get("/login", function (req, res) {
     session = req.session;
 
@@ -49,14 +69,6 @@ app.get("/signedin", function (req, res) {
     res.render("signedin.ejs");
 });
 
-app.get("/imprint", function (req, res) {
-  res.render("imprint.ejs");
-});
-
-app.get("/privacy", function (req, res) {
-  res.render("privacy.ejs")
-});
-
 app.get('/logout',function(req,res) {
     req.session.destroy(function (err) {
         if (err) {
@@ -66,6 +78,8 @@ app.get('/logout',function(req,res) {
         }
     });
 });
+
+//Start server
 app.listen(port, function () {
   console.log("Started on port " + port + "!");
 });

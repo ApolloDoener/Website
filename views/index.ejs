@@ -8,23 +8,24 @@
 
         <title>ApolloDoener Home</title>
 
-        <!-- INCLUDES -->
         <%- include("partials/includes.ejs") %>
         <link rel='stylesheet' href='/stylesheets/index.css' />
     <body>
         <%- include("partials/nav.ejs") %>
-    <header id="image-header">
-        <h2>ApolloDoener</h2>
-        <h4>Software mit Döner</h4>
-    </header>
+        <header id="image-header">
+            <div id="image-header-text">
+                <h2>ApolloDoener</h2>
+                <h4>Software mit Döner</h4>
+            </div>
+        </header>
 
-    <div id="contact">
-        <p>Kontaktiere uns!</p>
-        <a id="mail" href="mailto:kontakt@apollodoener.de"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
-        <a id="github" href="https://github.com/Tigifan"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-        <a id="twitter" href="https://twitter.com/Tigifohn"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-        <a id="youtube" href="https://www.youtube.com/channel/UCf0rC4YUbCITZGFX6zeiJNw"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a>
-    </div>
+        <div id="contact">
+            <p>Kontaktiere uns!</p>
+            <a id="mail" href="mailto:kontakt@apollodoener.de"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+            <a id="github" href="https://github.com/Tigifan"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+            <a id="twitter" href="https://twitter.com/Tigifohn"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+            <a id="youtube" href="https://www.youtube.com/channel/UCf0rC4YUbCITZGFX6zeiJNw"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a>
+        </div>
 
         <%- include("partials/footer.ejs") %>
     </body>

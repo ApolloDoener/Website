@@ -1,8 +1,12 @@
 #image-header {
     background: url("../images/header.png") no-repeat;
-    padding: 20% 0;
+    height: 100vh;
     text-align: center;
     text-shadow: 4px 4px 9px rgba(0, 0, 0, 0.73);}
+
+#image-header-text {
+    padding-top: 40vh;
+}
 
 #image-header h2 {
     font-size: 300%;

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Website"/>
+        <meta name="author" content="Raffael"/>
+
+        <title>ApolloDoener Gallerie</title>
+
+        <%- include("partials/includes.ejs") %>
+        <link rel='stylesheet' href='/stylesheets/index.css' />
+    </head>
+    <body>
+        <%- include("partials/nav.ejs") %>
+            <h1><%= files %></h1>
+            <h1><%= test %></h1>
+            <% if(files != undefined) {%>
+                <% files.forEach(function(file) { %>
+                    <p><%= file %></p>
+                <% }); %>
+            <% } else { %>
+                <p id="no-pictures">Es wurden keine Bilder gefunden!</p>
+            <% } %>
+        <%- include("partials/footer.ejs") %>
+    </body>
+</html>

@@ -19,6 +19,8 @@ footer a {
     color: #fff;
     font-size: 120%;
     font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
 
     transition: 0.5s;
     -o-transition: 0.5s;
