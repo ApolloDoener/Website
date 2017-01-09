@@ -2,9 +2,8 @@ const filesystem = require("fs");
 
 module.exports = {
     listFiles: function (path) {
-        filesystem.readdir(path, function (err, files) {
-            console.log(files);
-            return files;
-        })
+        const files = filesystem.readdirSync(path);
+        console.log(files);
+        return files;
     }
 };

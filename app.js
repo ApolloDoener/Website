@@ -32,12 +32,13 @@ app.get("/", function (req, res) {
 });
 
 app.get("/gallery", function (req, res) {
-    console.log(gallery.listFiles(__dirname + "/public/gallery/"));
-    //res.end(gallery.listFiles("/public/gallery"));
+    const files = gallery.listFiles(__dirname + "/public/gallery/");
+    console.log(files);
     res.render("gallery.ejs", {
-        files: gallery.listFiles(__dirname + "/public/gallery/"),
-        test: "doener"
+        files: files,
+        test: ["doener1", "doener2"]
     });
+    console.log(files);
 });
 
 // IMPRINT & PRIVACY
@@ -63,6 +64,7 @@ app.get("/signin", function (req, res) {
     session.email = req.body.email;
     res.end("done");
 });
+
 
 
 app.get("/signedin", function (req, res) {
