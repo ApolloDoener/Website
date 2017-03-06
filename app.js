@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 const port = 3000;
 
-var express = require("express");
+var express = require("express"),
+    app = express();
 var expressSession = require("express-session");
 var path = require("path");
 var favicon = require("serve-favicon");
@@ -9,8 +10,6 @@ var logger = require("morgan");
 var cookieParser = require("cookie-parser");
 var bodyParser = require("body-parser");
 var gallery = require("./gallery.js");
-
-var app = express();
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
@@ -31,14 +30,15 @@ app.get("/", function (req, res) {
   res.render("index.ejs");
 });
 
+app.get("/code", function (req, res) {
+   res.redirect("https://github.com/Tigifan");
+});
+
+// Gallery
 app.get("/gallery", function (req, res) {
-    const files = gallery.listFiles(__dirname + "/public/gallery/");
-    console.log(files);
     res.render("gallery.ejs", {
-        files: files,
-        test: ["doener1", "doener2"]
+        files: gallery.listFiles(__dirname + "/public/gallery/"),
     });
-    console.log(files);
 });
 
 // IMPRINT & PRIVACY
@@ -65,8 +65,6 @@ app.get("/signin", function (req, res) {
     res.end("done");
 });
 
-
-
 app.get("/signedin", function (req, res) {
     res.render("signedin.ejs");
 });
@@ -81,7 +79,13 @@ app.get('/logout',function(req,res) {
     });
 });
 
-//Start server
+app.use(function (req, res, next) {
+    console.log(req.path)
+   res.status(404).render("404.ejs", { url: "apollodoener.de" + req.path });
+});
+
+
+// Start server
 app.listen(port, function () {
   console.log("Started on port " + port + "!");
 });

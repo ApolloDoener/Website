@@ -1,0 +1,14 @@
+.center {
+    padding: 40vh 0;
+    height: 10vh;
+    text-align: center;
+}
+
+.center #description {
+    font-weight: normal;
+}
+
+.center #header {
+    color: #ff8c00;
+    font-size: 3vh;
+}

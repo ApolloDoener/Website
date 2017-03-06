@@ -1,0 +1,31 @@
+.header {
+    height: 50vh;
+    background-size: cover;
+    background-position: 100%;
+}
+
+.images {
+    width: 100%;
+    padding: 2.3% 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.images .image {
+    display: inline;
+    width: 25%;
+}
+
+.images .image:hover {
+    color: rgba(87, 87, 87, 0.5);
+}
+
+.images .gallery-image {
+    width: 24%;
+    padding: 0;
+    margin: 0;
+}
+
+h3 {
+    text-align: center;
+}

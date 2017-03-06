@@ -5,4 +5,5 @@ node_modules
 .idea
 public/stylesheets/font-awesome
 public/javascripts/web-animations
+public/gallery/*
 start.sh

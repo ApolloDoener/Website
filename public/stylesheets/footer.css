@@ -1,39 +1,51 @@
 footer {
-    background-color: #363B3E;
-    padding: 0.3% 0;
-}
+    position: relative;
+    bottom: 0;
 
-#footer-list {
-    list-style-type: none !important;
+    padding: 1%;
+    background-color: #f8f8f8;
+    width: 98%;
+
     text-align: center;
-    margin: 1%;
+
+    -webkit-box-shadow: 0 -5px 12px 0 rgba(0, 0, 0, 0.29);
+    -moz-box-shadow:    0 -5px 12px 0 rgba(0, 0, 0, 0.29);
+    box-shadow:         0 -5px 12px 0 rgba(0, 0, 0, 0.29);
 }
 
-#footer-list li {
-    display: inline;
-    padding: 0 8%;
+footer span {
+    color: #777;
+    padding: 12px 2.4%;
+    font-size: 125%;
+    margin: 0;
+    width: auto;
 }
 
 footer a {
-    text-align: center;
-    color: #fff;
-    font-size: 120%;
-    font-weight: bold;
-    font-style: normal;
+    color: #777;
+    padding: 12px 2.4%;
+    font-size: 125%;
     text-decoration: none;
-
-    transition: 0.5s;
-    -o-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -webkit-transition: 0.5s;
+    transition: 0.4s;
+    -o-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -webkit-transition: 0.4s;
 }
 
 footer a:hover {
-    color: #cdcdcd;
+    color: #ff8c00;
     text-decoration: none;
-
-    transition: 0.5s;
-    -o-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -webkit-transition: 0.5s;
+    transition: 0.4s;
+    -o-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -webkit-transition: 0.4s;
 }
+
+@media screen and (max-width: 600px) {
+
+    footer span {
+        width: 100% !important;
+        margin: auto;
+    }
+}
+
