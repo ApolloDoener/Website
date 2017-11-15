@@ -8,4 +8,17 @@
 #sudoku-table {
     width: 100%;
     text-align: center;
+    border-collapse: collapse;    
+}
+
+#sudoku-table table, #sudoku-table th, #sudoku-table td {
+    border: 1px solid black;
+}
+
+.sudoku-field table, .sudoku-field th, .sudoku-field td {
+    border: 1px solid rgb(100, 96, 96);
+}
+
+.sudoku-field {
+    background-color: pink;
 }
