@@ -34,6 +34,10 @@ app.get("/code", function (req, res) {
    res.redirect("https://github.com/Tigifan");
 });
 
+app.get("/sudoku", function(req, res) {
+    res.render("sudoku.ejs");
+});
+
 // Gallery
 app.get("/gallery", function (req, res) {
     res.render("gallery.ejs", {
