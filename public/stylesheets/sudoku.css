@@ -1,8 +1,9 @@
 #sudoku {
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 25%;
+    margin-left: 33%;
+    margin-right: 33%;
+    margin-top: 25vh;
+    height: 10vh;
+    margin-bottom: 55vh; 
 }
 
 #sudoku-table {
@@ -15,10 +16,14 @@
     border: 1px solid black;
 }
 
+#sudoku-table td {
+    width: 10%;
+}
+
 .sudoku-field table, .sudoku-field th, .sudoku-field td {
     border: 1px solid rgb(100, 96, 96);
 }
 
-.sudoku-field {
-    background-color: pink;
+.sudoku-field input {
+    width: 10px;
 }
