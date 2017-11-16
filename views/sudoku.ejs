@@ -10,209 +10,215 @@
         <%- include("partials/includes.ejs") %>
         <link rel='stylesheet' href='/stylesheets/nav-top.css' />
         <link rel='stylesheet' href='/stylesheets/sudoku.css' />
+
+        <script src="javascripts/sudoku.js"></script>
     </head>
     <body>
         <%- include("partials/nav.ejs") %>
+        
         <div id="sudoku">
             <table id="sudoku-table">
                 <tbody>
                     <tr>
                         <td>
-                            <table class="sudoku-field">
+                            <table class="sudoku-field" id="sudoku-1">
                                 <tbody>
                                     <tr>
-                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-1"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-2"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-3"></div></td>
                                     </tr>
                                     <tr>
-                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-4"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-5"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-6"></div></td>
                                     </tr>                 
                                     <tr>
-                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-7"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-8"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-9"></div></td>
                                     </tr>
                                 </tbody>
                             </table>
                         </td>
                         <td>
-                            <table class="sudoku-field">
+                            <table class="sudoku-field" id="sudoku-2">
                                 <tbody>
                                     <tr>
-                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-1"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-2"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-3"></div></td>
                                     </tr>
                                     <tr>
-                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-4"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-5"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-6"></div></td>
                                     </tr>                 
                                     <tr>
-                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-7"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-8"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-9"></div></td>
                                     </tr>
                                 </tbody>
                             </table>
                         </td>
                         <td>
-                            <table class="sudoku-field">
+                            <table class="sudoku-field" id="sudoku-3">
                                 <tbody>
                                     <tr>
-                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-1"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-2"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-3"></div></td>
                                     </tr>
                                     <tr>
-                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-4"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-5"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-6"></div></td>
                                     </tr>                 
                                     <tr>
-                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-7"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-8"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-9"></div></td>
                                     </tr>
                                 </tbody>
                             </table>
                         </td>
                     </tr>
                     <tr>
-                            <td>
-                                <table class="sudoku-field">
-                                    <tbody>
+                        <td>
+                            <table class="sudoku-field" id="sudoku-4">
+                                <tbody>
+                                    <tr>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-1"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-2"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-3"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-4"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-5"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-6"></div></td>
+                                    </tr>                 
+                                    <tr>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-7"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-8"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-9"></div></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="sudoku-field" id="sudoku-5">
+                                <tbody>
+                                    <tr>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-1"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-2"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-3"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-4"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-5"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-6"></div></td>
+                                    </tr>                 
+                                    <tr>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-7"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-8"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-9"></div></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="sudoku-field" id="sudoku-6"> 
+                                <tbody>
+                                    <tr>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-1"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-2"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-3"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-4"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-5"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-6"></div></td>
+                                    </tr>                 
+                                    <tr>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-7"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-8"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-9"></div></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table class="sudoku-field" id="sudoku-7">
+                                <tbody>
                                         <tr>
-                                            <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                            <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                            <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                        </tr>
-                                        <tr>
-                                            <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                            <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                            <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                        </tr>                 
-                                        <tr>
-                                            <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                            <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                            <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </td>
-                            <td>
-                                <table class="sudoku-field">
-                                    <tbody>
-                                        <tr>
-                                            <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                            <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                            <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                        </tr>
-                                        <tr>
-                                            <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                            <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                            <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                        </tr>                 
-                                        <tr>
-                                            <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                            <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                            <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </td>
-                            <td>
-                                <table class="sudoku-field">
-                                    <tbody>
-                                        <tr>
-                                            <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                            <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                            <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                        </tr>
-                                        <tr>
-                                            <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                            <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                            <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                        </tr>                 
-                                        <tr>
-                                            <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                            <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                            <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </td>
-                        </tr>
-                        <tr>
-                                <td>
-                                    <table class="sudoku-field">
-                                        <tbody>
-                                            <tr>
-                                                <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                                <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                                <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
+                                                <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-1"></div></td>
+                                                <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-2"></div></td>
+                                                <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-3"></div></td>
                                             </tr>
                                             <tr>
-                                                <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                                <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                                <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
+                                                <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-4"></div></td>
+                                                <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-5"></div></td>
+                                                <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-6"></div></td>
                                             </tr>                 
                                             <tr>
-                                                <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                                <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                                <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
+                                                <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-7"></div></td>
+                                                <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-8"></div></td>
+                                                <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-9"></div></td>
                                             </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                                <td>
-                                    <table class="sudoku-field">
-                                        <tbody>
-                                            <tr>
-                                                <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                                <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                                <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                            </tr>
-                                            <tr>
-                                                <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                                <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                                <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                            </tr>                 
-                                            <tr>
-                                                <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                                <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                                <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                                <td>
-                                    <table class="sudoku-field">
-                                        <tbody>
-                                            <tr>
-                                                <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                                <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                                <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                            </tr>
-                                            <tr>
-                                                <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                                <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                                <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                            </tr>                 
-                                            <tr>
-                                                <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                                <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                                <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" ></div></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="sudoku-field" id="sudoku-8">
+                                <tbody>
+                                    <tr>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-1"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-2"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-3"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-4"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-5"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-6"></div></td>
+                                    </tr>                 
+                                    <tr>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-7"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-8"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-9"></div></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="sudoku-field" id="sudoku-9">
+                                <tbody>
+                                    <tr>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-1"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-2"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-3"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-4"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-5"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-6"></div></td>
+                                    </tr>                 
+                                    <tr>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-7"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-8"></div></td>
+                                        <td><div><input type="text" maxlength="1" pattern="[1-9]" autocomplete="off" class="input-9"></div></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
+            <div id="calculate">
+                <a class="pure-button">Berechnen</a>                    
+            </div>
         </div>
 
         <%- include("partials/footer.ejs") %>
